@@ -99,6 +99,5 @@ class ViewController: UITableViewController {
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         updateHeaderView()
-        NSLog("content offset: \(scrollView.contentOffset.y)")
     }
 }
