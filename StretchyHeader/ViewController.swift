@@ -20,6 +20,8 @@ class ViewController: UITableViewController {
         return kTableviewHeaderHeight - kTableHeaderCutAway/2
     }
     
+    @IBOutlet var dateLabel: UILabel!
+    
     let items = [
         NewsItem(category: .World, summary: "Climate change protests, divestments meet fossil fuels realities"),
         NewsItem(category: .Europe, summary: "Scotland's 'Yes' leader says independence vote is 'once in a lifetime'"),
@@ -52,6 +54,11 @@ class ViewController: UITableViewController {
         headerMaskLayer.fillColor = UIColor.blackColor().CGColor
         headerView.layer.mask = headerMaskLayer
         updateHeaderView()
+        
+        // set current date
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MMMM dd"
+        dateLabel.text = dateFormatter.stringFromDate(NSDate())
         
     }
     

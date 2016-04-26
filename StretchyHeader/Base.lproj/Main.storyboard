@@ -83,6 +83,9 @@
                             <outlet property="delegate" destination="yS4-ts-g67" id="Qfo-dw-uZZ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="dateLabel" destination="3np-p9-1qX" id="k6T-Xo-ynw"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WbL-MK-MFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
